@@ -1,0 +1,129 @@
+.social
+    &-menu
+        position: absolute
+        display: grid
+        left: 10px
+        top: 790px
+        color: $navbar-icons
+        i
+            margin-top: 12px
+    &-image
+        background-image: url('../img/hero/hero-img.png')
+        background-repeat: no-repeat
+        color: $navbar-menu
+        border-left: 60px solid
+        border-right: 60px solid
+        border-bottom: 60px solid
+        border-color: $navbar-color 
+.text
+    color: $hero-text
+.hero
+    text-align: center
+    &-text
+        &__title
+            padding-top: 85px
+            padding-bottom: 30px
+            font-size: 40px
+        &__button
+            padding: 11px 24px 7px
+            margin-left: 40px
+            margin-right: 33px
+            font-size: 16px
+            background-color: transparent
+            color: $navbar-menu
+        &__topic
+            font-size: 30px
+            margin: 174px 0 30px
+        &__head
+            font-size: 60px
+            margin-bottom: 5px
+        &__subtitle
+            font-size: 20px
+            padding-bottom: 153px
+            line-height: 26px
+    &-product
+        margin-right: 85px
+        margin-left: 60px
+        &__subtitle
+            font-size: 20px
+            margin-top: 33px
+            margin-bottom: 100px
+            +italic
+    &-phone
+        display: flex
+        justify-content: flex-end
+        position: relative
+        top: 37px
+        right: 80px
+        a
+            margin: 0 6px
+            color: $navbar-menu
+            text-decoration: none
+.products
+    display: flex
+    justify-content: center
+
+@media (max-width: 1080px)
+    .social
+        &-menu
+            top: 400px
+        &-image
+            border: none
+    .hero
+        &-text
+            &__title
+                font-size: 30px
+            &__topic
+                font-size: 25px
+                margin: 100px 0 15px
+            &__head
+                font-size: 40px
+            &__subtitle
+                font-size: 15px
+                padding-bottom: 70px
+        &-product
+            margin: 0 40px
+            &__subtitle
+                font-size: 15px
+                margin-bottom: 50px
+        &-phone
+            top: -10px
+            right: -20px
+            padding-bottom: 20px
+@media (min-width: 992px)
+    .hero
+        &-phone
+            a
+                &:hover
+                    color: $navbar-hover
+@media (max-width: 900px)
+    .hero
+        &-text
+            &__title
+                font-size: 25px
+                padding-top: 50px
+            &__topic
+                margin-top: 50px
+@media (max-width: 806px)
+    .products
+        flex-direction: column
+@media (max-width: 545px)
+    .hero
+        &-text
+            &__title
+                font-size: 20px
+            &__button
+                margin-bottom: 15px
+            &__subtitle
+                padding-bottom: 40px
+        &-phone
+            display: flex
+            flex-direction: column
+            top: 4px
+            right: 5px
+        &-product
+            &__subtitle
+                margin-bottom: 25px
+    .social
+        &-menu
+            top: 800px

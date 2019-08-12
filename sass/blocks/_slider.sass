@@ -1,0 +1,33 @@
+.slider
+    text-align: -webkit-center
+    &-img
+        position: absolute
+        right: 0px
+        margin-top: -155px
+    &-block
+        display: flex
+    &-arrow
+        display: flex
+        justify-content: space-between
+        position: relative
+        top: -66px
+    &__title
+        padding: 27px 0 10px
+        font-size: 40px
+    &__subtitle
+        margin-bottom: 76px
+
+@media (min-width: 996px)
+    .slider
+        &-arrow
+            cursor: pointer
+@media (max-width: 870px)
+    .slider
+        &__title
+            font-size: 30px
+@media (max-width: 582px)
+    .slider
+        &__title
+            font-size: 20px
+        &__subtitle
+            font-size: 15px

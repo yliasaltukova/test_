@@ -1,0 +1,32 @@
+.footer
+    background-color: $navbar-color
+    &-img
+        position: absolute
+        right: 0
+        margin-top: -60px
+    &-main
+        display: flex
+        align-items: center
+        padding: 123px 0 161px 37px
+    &-logo
+        margin-right: 134px
+    &-block
+        font-size: 18px
+        color: $navbar-menu
+        a
+            color: $navbar-menu
+            text-decoration: none
+@media (min-width: 992px)
+    a
+        &:hover
+            color: $navbar-hover
+@media (max-width: 900px)
+    .footer
+        &-main
+            flex-direction: column
+            padding: 100px 0
+        &-block
+            font-size: 15px
+            margin-top: 40px
+
+    

@@ -1,0 +1,65 @@
+.map
+    iframe
+        width: 100%
+    position: relative
+    opacity: 0.4
+    &-block
+        height: 698px
+        background: $map-color
+        iframe
+            width: 100%
+            frameborder: 0
+    &-form
+        max-width: 462px
+        width: 100%
+        height: 523px
+        border-radius: 5px
+        background: rgba(255, 255, 255, 0.5)
+        text-align: center
+        position: relative
+        bottom: 600px
+        left: 120px
+        &__title
+            padding: 30px 0
+            color: $navbar-menu
+        &__button
+            max-width: 394px
+            width: 100%
+            height: 62px
+            margin-top: 20px
+            background-color: $map-button
+            color: $navbar-menu
+            font-size: 24px
+            border: 1px solid #707070
+            border-radius: 3px
+.name, .email
+    &__input
+        max-width: 394px
+        width: 100%
+        height: 62px
+        margin-bottom: 20px
+        padding-left: 23px
+        border: 1px solid #707070
+        border-radius: 3px
+.message
+    &__input
+        max-width: 394px
+        width: 100%
+        height: 135px
+        padding-left: 23px
+        border: 1px solid #707070
+        border-radius: 3px
+.error
+    display: inline-block
+    margin-bottom: 10px
+    font-size: 13px
+    color: $error-color
+@media (max-width: 739px)
+    .map
+        &-form
+            left: 0
+            height: 500px
+            padding: 0 40px
+            &__title
+                font-size: 20px
+                padding: 15px 0

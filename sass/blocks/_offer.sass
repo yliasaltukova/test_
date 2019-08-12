@@ -1,0 +1,65 @@
+.offer
+    background-image: url('../img/offer/offer-img.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    &-block
+        padding: 71px 0 24px
+        color: $navbar-menu
+        &__title
+            margin-bottom: 10px
+            font-size: 40px
+        &__subtitle
+            margin-bottom: 40px
+            font-size: 20px
+        &__image
+            img
+                width: 100%
+    &-menu
+        text-align: center
+    &-services
+        display: flex
+        justify-content: center
+    &-production
+        box-shadow: 0 3px 6px #000000
+        border-radius: 5px
+        background-color: #000000
+        opacity: 0.41
+        padding: 24px
+        margin: 0 15px 0 15px
+        &__title
+            border-bottom: 2px solid
+        &__subtitle
+            font-size: 18px
+            margin-top: 10px
+@media (max-width: 1200px)
+    .offer
+        height: 700px
+        &-block
+            padding-top: 40px
+            &__title
+                font-size: 30px
+            &__subtitle
+                font-size: 15px
+                margin-bottom: 20px
+        &-services
+            flex-wrap: wrap
+        &-production
+            margin-top: 10px
+            &__subtitle
+                font-size: 15px
+@media (max-width: 765px)
+    .offer
+        &-production
+            padding: 15px
+            &__title
+                font-size: 20px
+        &-block
+            &__title
+                font-size: 25px
+            &__subtitle
+                font-size: 12px
+@media (max-width: 386px)
+    .offer
+        &-production
+            &__subtitle
+                font-size: 12px

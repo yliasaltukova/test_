@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('../fonts/SegoeUI.eot');
+    src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI.woff') format('woff'),
+    url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    src: url('../fonts/SegoeUI-Italic.eot');
+    src: url('../fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-Italic.woff') format('woff'),
+    url('../fonts/SegoeUI-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@mixin reg {
+    font-family: 'Segoe UI Regular';
+    font-weight: normal;
+}
+
+@mixin italic {
+    font-family: 'Segoe UI Italic';
+    font-weight: normal; 
+}
